@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int itemIndex, String itemName) {
                 if(itemIndex==0) {
-                    Toast.makeText(MainActivity.this, itemIndex + " " + itemName, Toast.LENGTH_SHORT).show();
+
                     Intent n = new Intent(MainActivity.this, night_weather.class);
                     startActivity(n);
                 }
                 if(itemIndex==2) {
-                    Toast.makeText(MainActivity.this, itemIndex + " " + itemName, Toast.LENGTH_SHORT).show();
+
                     Intent i = new Intent(MainActivity.this, Music.class);
                     startActivity(i);
                 }
@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, itemIndex + " " + itemName, Toast.LENGTH_SHORT).show();
                     Intent n = new Intent(MainActivity.this, night_weather.class);
                     startActivity(n);
+                }
+                if(itemIndex==2) {
+
+                    Intent i = new Intent(MainActivity.this, Music.class);
+                    startActivity(i);
                 }
             }
         });

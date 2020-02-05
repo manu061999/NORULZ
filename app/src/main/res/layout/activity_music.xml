@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bruce"
+            android:text="Arjith Singh"
             android:textSize="38sp"
             android:textColor="@android:color/black"
             android:textStyle="bold"/>
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Springsteen"
-            android:textSize="28sp"
+            android:textSize="20sp"
             android:textColor="@android:color/black"/>
     </LinearLayout>
 
@@ -60,7 +60,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/pause"
-            android:background="@drawable/ic_pause_circle_outline_black_24dp" />
+            android:background="@drawable/ic_play_circle_filled_black_24dp" />
 
         <TextView
             android:layout_width="0dp"
@@ -97,11 +97,14 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:paddingLeft="3dp">
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/pay"
-                android:src="@drawable/ic_play_circle_filled_black_24dp"/>
+                android:id="@+id/play"
+                android:background="@color/v"
+                android:src="@drawable/ic_pause_circle_outline_black_24dp"/>
+
+
 
         </LinearLayout>
 
