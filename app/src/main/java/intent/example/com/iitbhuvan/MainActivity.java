@@ -27,10 +27,12 @@ public class MainActivity extends AppCompatActivity {
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_queue_music_black_24dp));
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_settings_black_24dp));
 
+
         navigationView.setSpaceOnClickListener(new SpaceOnClickListener() {
             @Override
             public void onCentreButtonClick() {
-                Toast.makeText(MainActivity.this,"onCentreButtonClick", Toast.LENGTH_SHORT).show();
+                Intent a= new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(a);
             }
 
             @Override
