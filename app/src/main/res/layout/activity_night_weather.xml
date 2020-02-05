@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".weather">
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VISHAKAPATNAM"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/text2"
+        />
+    <TextView
+        android:id="@+id/country"
+        android:layout_below="@+id/city"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INDIA"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text2"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_below="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEDNESDAY 5 FEB"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/text2"
+        />
+    <TextView
+        android:id="@+id/time1"
+        android:layout_below="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6:00 PM"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/text2"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150dp"
+        android:layout_below="@+id/time1"
+        android:id="@+id/image"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/night"
+        />
+    <TextView
+        android:id="@+id/degree"
+        android:layout_below="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17ºC"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text2"
+        />
+
+    <TextView
+        android:id="@+id/sun"
+        android:layout_below="@+id/degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEARING"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text2"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sun"
+        android:weightSum="3"
+
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/temp"
+            android:layout_margin="10dp">
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HUMIDITY"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/text2"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="94%"
+                android:textStyle="bold"
+                android:textSize="16sp"
+
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/text2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/temp"
+            android:layout_margin="10dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIND"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/text2"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 km/hr"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/text2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/temp"
+            android:layout_margin="10dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REAL FUEL"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/text2"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19ºC"
+                android:textStyle="bold"
+                android:textSize="16sp"
+               android:padding="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/text2"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
